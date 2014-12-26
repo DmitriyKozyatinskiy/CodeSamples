@@ -76,12 +76,12 @@ DocNotes.saveNote = function(date) {
 }
 
 DocNotes.noteReplace = function() {
-    var container = $(".note-container");    
+    var container = $(".note-container");
     for(var id in DocNotes.Notes) {
         container.each(function() {
             var that = $(this);
-            that.html(that.html().replace(DocNotes.Notes[id], '<font class="Doc-note Doc-note--highlighted" data-id="' + id + '">' + DocNotes.Notes[id] + '</font>'));            
-        });        
+            that.html(that.html().replace(DocNotes.Notes[id], '<font class="Doc-note Doc-note--highlighted" data-id="' + id + '">' + DocNotes.Notes[id] + '</font>'));
+        });
     }}
 
 
